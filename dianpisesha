@@ -38,7 +38,7 @@ image: "http://3.bp.blogspot.com/-xxDaCET5wYE/UA2qkdhhs5I/AAAAAAAACYk/IkjgHkJRkN
             aboutlink: "http://warohotv.blogspot.com/"
   });}
 
-function server2() {
+   function server2() {
 jwplayer("player").setup({
   playlist: "http://gdata.youtube.com/feeds/api/playlists/PL76AF51AAD13B6FD1?max-results=50&alt=rss",
 width: "100%",
@@ -48,7 +48,7 @@ autostart: "true",
 primary: "flash",
 skin: "roundster",
 sharing: {
-                code: encodeURI("<iframe width='638' height='478' src='http://serverrrrr.blogspot.com/2014/03/embad.html' /></iframe>"),
+                code:  encodeURI("<iframe width='638' height='478'  src='http://serverrrrr.blogspot.com/2014/03/embad.html'  /></iframe>"),
                 link: "http://warohotv.blogspot.com/" 
              },
 image: "http://3.bp.blogspot.com/-xxDaCET5wYE/UA2qkdhhs5I/AAAAAAAACYk/IkjgHkJRkNY/s320/LOGOKEPSUK.png",
@@ -62,3 +62,4 @@ image: "http://3.bp.blogspot.com/-xxDaCET5wYE/UA2qkdhhs5I/AAAAAAAACYk/IkjgHkJRkN
   abouttext: "Free Broadcasting",
             aboutlink: "http://warohotv.blogspot.com/"
   });}
+
