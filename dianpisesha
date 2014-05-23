@@ -1,5 +1,5 @@
-<script>
-jwplayer("mediaPlayer").setup({
+function serverdianpisesha() {
+jwplayer("player").setup({
   playlist: "http://gdata.youtube.com/feeds/api/playlists/PL20047F0DA1618B18?max-results=50&alt=rss",
 listbar: {
 layout: 'basic',
@@ -14,5 +14,5 @@ skin: "roundster",
                 code: encodeURI("<iframe width='600' height='500' src='http://playerwaroho.blogspot.com/2014/04/warohotv.html' /></iframe>"),
                 link: "http://warohotv.blogspot.com/" 
              }
-    });
-</script>
+    });}
+
