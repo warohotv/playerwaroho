@@ -10,9 +10,6 @@ stretching: "exactfit",
         width: '100%',
         height: '100%',
 skin: "roundster",
-  sharing: {
-                code: encodeURI("<iframe width='600' height='500' src='http://playerwaroho.blogspot.com/2014/04/warohotv.html' /></iframe>"),
-                link: "http://warohotv.blogspot.com/" 
-             }
+sharing:' {)',
     });}
 
