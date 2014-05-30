@@ -32,7 +32,7 @@ stretching: "exactfit",
 skin: "roundster",
 width: '100%',
 height: '100%',
- plugins: {   'http://luwes.co/lightsout-jw/2.0/lightsout.js':{            onplay:     'on',            onpause:    'on',            oncomplete: 'on',            dockicon: true,            onidle: 'on'         }  },
+
 
 sharing: {code: encodeURI("<iframe width='600' height='500' src='http://playerwaroho.blogspot.com/2014/05/1238.html' /></iframe>"),link: "http://warohotv.blogspot.com/" }
 });
