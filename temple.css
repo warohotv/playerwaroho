@@ -1,47 +1,52 @@
-/* Variable definitions
-   ====================
-   <Variable name="bgcolor" description="Page Background Color"
-             type="color" default="#fff" value="#ffffff">
-   <Variable name="textcolor" description="Text Color"
-             type="color" default="#333" value="#333333">
-   <Variable name="linkcolor" description="Link Color"
-             type="color" default="#58a" value="#5588aa">
-   <Variable name="pagetitlecolor" description="Blog Title Color"
-             type="color" default="#666" value="#666666">
-   <Variable name="descriptioncolor" description="Blog Description Color"
-             type="color" default="#999" value="#999999">
-   <Variable name="titlecolor" description="Post Title Color"
-             type="color" default="#c60" value="#cc6600">
-   <Variable name="bordercolor" description="Border Color"
-             type="color" default="#ccc" value="#cccccc">
-   <Variable name="sidebarcolor" description="Sidebar Title Color"
-             type="color" default="#999" value="#999999">
-   <Variable name="sidebartextcolor" description="Sidebar Text Color"
-             type="color" default="#666" value="#666666">
-   <Variable name="visitedlinkcolor" description="Visited Link Color"
-             type="color" default="#999" value="#999999">
-   <Variable name="bodyfont" description="Text Font"
-             type="font" default="normal normal 100% Georgia, Serif" value="normal normal 100% Georgia, Serif">
-   <Variable name="headerfont" description="Sidebar Title Font"
-             type="font"
-             default="normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif" value="normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif">
-   <Variable name="pagetitlefont" description="Blog Title Font"
-             type="font"
-             default="normal normal 200% Georgia, Serif" value="normal normal 200% Georgia, Serif">
-   <Variable name="descriptionfont" description="Blog Description Font"
-             type="font"
-             default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif" value="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
-   <Variable name="postfooterfont" description="Post Footer Font"
-             type="font"
-             default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif" value="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
-   <Variable name="startSide" description="Side where text starts in blog language"
-             type="automatic" default="left" value="left">
-   <Variable name="endSide" description="Side where text ends in blog language"
-             type="automatic" default="right" value="right">
+<![CDATA[
+      /*
 */
-
+body#layout ul{list-style-type:none;list-style:none}
+body#layout ul li{list-style-type:none;list-style:none}
+body#layout #skiplinks{display:none}
+body#layout #content {width:600px;}
+/* Variable definitions
+====================
+<Variable name="bgcolor" description="Page Background Color"
+type="color" default="#fff" value="#ffffff">
+<Variable name="textcolor" description="Text Color"
+type="color" default="#333" value="#333333">
+<Variable name="linkcolor" description="Link Color"
+type="color" default="#58a" value="#5588aa">
+<Variable name="pagetitlecolor" description="Blog Title Color"
+type="color" default="#666" value="#666666">
+<Variable name="descriptioncolor" description="Blog Description Color"
+type="color" default="#999" value="#999999">
+<Variable name="titlecolor" description="Post Title Color"
+type="color" default="#c60" value="#cc6600">
+<Variable name="bordercolor" description="Border Color"
+type="color" default="#ccc" value="#cccccc">
+<Variable name="sidebarcolor" description="Sidebar Title Color"
+type="color" default="#999" value="#999999">
+<Variable name="sidebartextcolor" description="Sidebar Text Color"
+type="color" default="#666" value="#666666">
+<Variable name="visitedlinkcolor" description="Visited Link Color"
+type="color" default="#999" value="#999999">
+<Variable name="bodyfont" description="Text Font"
+type="font" default="normal normal 100% Georgia, Serif" value="normal normal 100% Georgia, Serif">
+<Variable name="headerfont" description="Sidebar Title Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif" value="normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif">
+<Variable name="pagetitlefont" description="Blog Title Font"
+type="font"
+default="normal normal 200% Georgia, Serif" value="normal normal 200% Georgia, Serif">
+<Variable name="descriptionfont" description="Blog Description Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif" value="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
+<Variable name="postfooterfont" description="Post Footer Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif" value="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
+<Variable name="startSide" description="Side where text starts in blog language"
+type="automatic" default="left" value="left">
+<Variable name="endSide" description="Side where text ends in blog language"
+type="automatic" default="right" value="right">
+*/
 /* Use this with templates/template-twocol.html */
-
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font:inherit inherit 100% inherit;margin:0;outline:0;padding:0;vertical-align:baseline}
 html{overflow-y:scroll;font-size:62.5%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 body{background:#fff}
@@ -140,14 +145,13 @@ embed,iframe,object{max-width:100%}
 .widget{margin:0 0 1.5em}
 #searchsubmit{display:none}
 #wrapper{min-height:100%;position:relative}
-
-
 #slider{position:relative;width:900px;margin:0 auto;padding:0 0 30px 0;background:transparent}
 #main{padding:30px 0 90px 0;width:1000px;margin:0 auto;word-wrap:break-word;overflow:hidden;}
 #content{width:675px;float:left}
 #sidebar{width:300px;float:right}
 #full-content{padding:20px 0}
-.post{background:transparen;padding:30px 30px;margin-bottom:20px;font-family:Tahoma,Arial;}
+.post{background:transparen;padding:4px 4px;margin-bottom:2px;font-family:Tahoma,Arial;opacity:0.9;
+  filter:alpha(opacity=99); /* For IE8 */}
 .title{margin-bottom:15px}
 .title h2{font-size:26px;font-family:Georgia,serif;}
 .title h2 a:link,.title h2 a:visited{color:#698948}
@@ -180,7 +184,6 @@ ul#recentcomments li.recentcomments{border-bottom:1px solid #333;padding:5px 0}
 .sidebox .textwidget p{padding:0 10px}
 #navigation{padding:0 10px}
 #footer{position:absolute;bottom:0;width:100%;height:70px;padding-top:20px}
-
 .main .widget{margin:0 0 5px;padding:0 0 2px}
 .main .Blog{border-bottom-width:0}
 #header .description{display:none;}
@@ -210,19 +213,16 @@ a.says{color:#000;font:normal 14px Arial,Tahoma,Verdana}
 .comment-form{max-width:600px;}
 #navbar-iframe{height:0;visibility:hidden;display:none;}
 .cover{float:left;width:100%;}
-
 /*
- * jQuery FlexSlider v2.0
- * http://www.woothemes.com/flexslider/
- *
- * Copyright 2012 WooThemes
- * Free to use under the GPLv2 license.
- * http://www.gnu.org/licenses/gpl-2.0.html
- *
- * Contributing author: Tyler Smith (@mbmufffin)
- */
-
- 
+* jQuery FlexSlider v2.0
+* http://www.woothemes.com/flexslider/
+*
+* Copyright 2012 WooThemes
+* Free to use under the GPLv2 license.
+* http://www.gnu.org/licenses/gpl-2.0.html
+*
+* Contributing author: Tyler Smith (@mbmufffin)
+*/
 /* Browser Resets */
 .flex-container a:active,
 .flexslider a:active,
@@ -231,90 +231,73 @@ a.says{color:#000;font:normal 14px Arial,Tahoma,Verdana}
 .slides,
 .flex-control-nav,
 .flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
-
 /* FlexSlider Necessary Styles
 *********************************/ 
-
 .flexslider {margin: 0; padding: 0;}
 .flexslider .slides > li {margin: 0; padding: 0; display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {width: 100%; display: block;}
 .flex-pauseplay span {text-transform: capitalize;}
-
 /* Clearfix for the .slides element */
 .slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
 html[xmlns] .slides {display: block;} 
 * html .slides {height: 1%;}
-
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
+* include js that eliminates this class on page load */
 .no-js .slides > li:first-child {display: block;}
-
-
 /* Captions
 ***********************************/
-
 .flex-caption{
-    position:absolute;
-    width:50%;
-    left:40px;
-    bottom:40px;
-    z-index:200;
-    background: rgba(255,255,255,0.9);
-    border:1px solid #fff;
-    color:#555;
-    
+position:absolute;
+width:50%;
+left:40px;
+bottom:40px;
+z-index:200;
+background: rgba(255,255,255,0.9);
+border:1px solid #fff;
+color:#555;
 }
-
 .flex-caption h3{
-    margin:0px;
-    text-transform: uppercase;
-    margin:10px 15px 5px 15px;
-    font-size:20px;
-    font-weight:700;
-    color:#555;
-    }
-
-.flex-caption p{
-    margin:0px 15px 15px 15px;
-    font-size:12px;    
+margin:0px;
+text-transform: uppercase;
+margin:10px 15px 5px 15px;
+font-size:20px;
+font-weight:700;
+color:#555;
 }
-
+.flex-caption p{
+margin:0px 15px 15px 15px;
+font-size:12px;    
+}
 /* FlexSlider Default Theme
 *********************************/
 .flexslider {margin: 0 0 0px; background: transparent;  position: relative; zoom: 1; border:0px solid #fff;}
 .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .loading .flex-viewport {max-height: 300px;}
 .flexslider .slides {zoom: 1;}
-
 .carousel li {margin-right: 5px}
-
-
 /* Direction Nav */
 .flex-direction-nav { height: 0; }
 .flex-direction-nav li a {width: 33px; height: 33px; margin: -20px 0 0; display: block; background: url(#) no-repeat; position: absolute; top: 50%; cursor: pointer; text-indent: -999em;}
 .flex-direction-nav li .flex-next {background-position: -32px 0; right: 20px;}
 .flex-direction-nav li .flex-prev { left: 20px;}
 .flex-direction-nav li .disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
-
 /* Control Nav */
 .flex-control-nav { display:none; width: 100%; position: absolute; bottom: -15px; text-align: center; height:15px; background:#F8F8F8;}
 .flex-control-nav li {margin: 0 0px; display: inline-block; zoom: 1; *display: inline;}
 .flex-control-paging li a {margin:5px 5px 0px 5px; width:110px; height: 5px; display: block; cursor: pointer; text-indent: -9999px;  background-color: #ddd; background: rgba(221,221,221,0.4);}
 .flex-control-paging li a:hover { background-color: #ddd; background: rgba(221,221,221,0.9); }
 .flex-control-paging li a.flex-active { background-color: #ff4b2f; background: rgba(255,75,47,1); cursor: default; }
-
 .flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
 .flex-control-thumbs li {width: 25%; float: left; margin: 0;}
 .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .active {opacity: 1; cursor: default;}
-
 @media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
-  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
-  .flex-caption{ display:none;}
-  .flex-control-nav{display:none;}
+.flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+.flex-direction-nav .flex-next {opacity: 1; right: 0;}
+.flex-caption{ display:none;}
+.flex-control-nav{display:none;}
 }
 /* Horyzontal Droupdown menu
 ----------------------------------------------- */
@@ -323,7 +306,8 @@ html[xmlns] .slides {display: block;}
 #top{width:100%}
 #top,#top ul{list-style:none;font-family:Arial, serif;margin:0;padding:0}
 #top a{display:block;text-decoration:none;font:normal 11px Arial;text-transform:none;color:#CECECF;border-right:1px solid #484747;border-left:1px solid #191919;padding:7px 10px 7px}
-#top a.arrow{background-image:url(http://3.bp.blogspot.com/-LzmPTNyR6po/TwETZufjSTI/AAAAAAAAATo/oisHmXUjmSY/s1600/arrow_white.gif);background-repeat:no-repeat;background-position:right center;padding:7px 24px 7px 10px}
+#top a.arrow{background-image:url(http://3.bp.blogspot.com/-LzmPTNyR6po/TwETZufjSTI/AAAAAAAAATo/oisHmXUjmSY/s1600/arrow_white.gif);background-repeat:no-repeat;background-position:right center;padding:7px 24px 7px 10px;opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 */}
 #top li{float:left;position:static;width:auto}
 #top li ul,#top ul li{width:170px}
 #top ul li a{text-align:left;color:#fff;font-size:12px;font-weight:400;text-transform:none;font-family:Arial;border:none;padding:5px 10px}
@@ -335,7 +319,6 @@ html[xmlns] .slides {display: block;}
 #top ul a:hover{background-color:#555!important;color:#fff!important;text-decoration:none}
 #top a span,#top a.arrow span{font:bold 12px Arial;color:#888;display:block;line-height:16px;text-transform:uppercase;text-shadow: 1px 2px 2px #000}
 #top li:hover a span,#top li:hover a.arrow span{color:#f1c822}
-
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .clearfix{display:inline-block}
 #inner{padding-top:40px;}
@@ -346,158 +329,156 @@ html[xmlns] .slides {display: block;}
 * html #fixedinner{margin-right:17px;}
 * html #fixed {position:absolute;}
 .bt1{
-       background:#F545EC url(http://wild-galls.com/free/teen-sex-movs/movs/00061/images/bg.png);
-       border:3px solid #F8E90F;
-       border-radius:5px;
-       margin:1px;
-       padding:3px 3px;
-       box-shadow:0px 1px 2px #696969;
-       color:white;
-       font-size:color: yellow; font-size: 12px;;
-       font-weight:bold;
-       letter-spacing:0px;
-       text-shadow:0px 1px 2px black;
+background:#F545EC url(http://wild-galls.com/free/teen-sex-movs/movs/00061/images/bg.png);
+border:3px solid #F8E90F;
+border-radius:5px;
+margin:1px;
+padding:3px 3px;
+box-shadow:0px 1px 2px #696969;
+color:white;
+font-size:color: yellow; font-size: 12px;;
+font-weight:bold;
+letter-spacing:0px;
+text-shadow:0px 1px 2px black;
 }
 .bt1:hover{color:#CCFF00;background:#333399;}
 .bt2{
-       background:#4682B4 url(http://gubhugreyotprojects-smallbg.googlecode.com/svn/bgButtons-1V5H5.gif);
-       border-radius: 2px 2px;
-       border: 1px solid #99CCCC; 
-       margin: 2px;
-       padding: 2px 2px 2px 2px;
-       min-width: 115px;
-       color: white;
-       font-family: helvetica, arial, sans-serif;
-       font-size: 20px;
-       font-weight: bold;
-       letter-spacing: 0px;
-       word-spacing: 0px;
-       text-align: left;
-       text-shadow: 0px 0px 0px black;
+background:#4682B4 url(http://gubhugreyotprojects-smallbg.googlecode.com/svn/bgButtons-1V5H5.gif);
+border-radius: 2px 2px;
+border: 1px solid #99CCCC; 
+margin: 2px;
+padding: 2px 2px 2px 2px;
+min-width: 115px;
+color: white;
+font-family: helvetica, arial, sans-serif;
+font-size: 20px;
+font-weight: bold;
+letter-spacing: 0px;
+word-spacing: 0px;
+text-align: left;
+text-shadow: 0px 0px 0px black;
 }
 .bt2:hover{color:#FF0000;background:#333;} 
 .bt3{ 
-       background:white;
-       border:1px solid #FF8C00;
-       border-radius:9px;
-       padding: 6px 8px 4px 8px;
-       color:black;
-       font-family:Arial;
-       font-size: 15px;
-       font-weight:bold;
-       letter-spacing: -1px;
-       font-style: italic;
-       text-transform: uppercase;
-       text-align: left;
+background:white;
+border:1px solid #FF8C00;
+border-radius:9px;
+padding: 6px 8px 4px 8px;
+color:black;
+font-family:Arial;
+font-size: 15px;
+font-weight:bold;
+letter-spacing: -1px;
+font-style: italic;
+text-transform: uppercase;
+text-align: left;
 }
 .bt3:hover{background:#FF8C00;}
 .bt4{
-       background:#4b1701;
-       border:1px solid #d8dada;
-       border-radius:11px;
-       margin:1px;
-       padding:1px 8px 3px;
-       box-shadow:1px 1px 3px #a1d7fd;
-       color:#0101ff;
-       font-size: 16px;
-       font-family:Times New Roman;
-       font-weight: bold;
-       letter-spacing: 0px;
-       text-shadow: 0px 1px 1px #FFCC33;
+background:#4b1701;
+border:1px solid #d8dada;
+border-radius:11px;
+margin:1px;
+padding:1px 8px 3px;
+box-shadow:1px 1px 3px #a1d7fd;
+color:#0101ff;
+font-size: 16px;
+font-family:Times New Roman;
+font-weight: bold;
+letter-spacing: 0px;
+text-shadow: 0px 1px 1px #FFCC33;
 }
 .bt5{
-       background:#336666 url(http://gubhugreyotprojects-smallbg.googlecode.com/svn/bgButtons-2H15V25.png) center repeat;
-       border:1px solid #33CC99;
-       border-radius:1px;
-       margin:1px;
-       padding:2px 6px 4px;
-       box-shadow:1px 1px 2px #333;
-       color:#0000FF;
-       font-size:12px;
-       font-family:Cursive;
-       font-weight:bold;
-       letter-spacing:0px;
-       text-shadow: 0px 1px 1px #FFCC33;
+background:#336666 url(http://gubhugreyotprojects-smallbg.googlecode.com/svn/bgButtons-2H15V25.png) center repeat;
+border:1px solid #33CC99;
+border-radius:1px;
+margin:1px;
+padding:2px 6px 4px;
+box-shadow:1px 1px 2px #333;
+color:#0000FF;
+font-size:12px;
+font-family:Cursive;
+font-weight:bold;
+letter-spacing:0px;
+text-shadow: 0px 1px 1px #FFCC33;
 }
 .bt5:hover{color:#6CF;text-shadow:1px 1px 1px #000;background:url(http://gubhugreyotprojects-smallbg.googlecode.com/svn/bgButtons-3V31H33.gif);}   
 .bt4:hover{color:red;background:#CCCCCC;}
 .bt1,.bt2,.bt3,.bt4,.bt5,.btst1,.btst2,.btst3{
-       cursor:pointer;
-       transition:0.8s;
-       -o-transition:0.8s;
-       -moz-transition:0.8s;
-       -webkit-transition:0.8s;
-       -ms-transition:0.8s;
+cursor:pointer;
+transition:0.8s;
+-o-transition:0.8s;
+-moz-transition:0.8s;
+-webkit-transition:0.8s;
+-ms-transition:0.8s;
 }
 .bt6{
-       -moz-border-radius: 5px;
-       -webkit-border-radius: 5px;
-        background-color: #E00BEB;
-       behavior: url(http://pace-tv.googlecode.com/files/border-radius.htc);
-       border-radius: 5px;
-       border: 2px solid #19E526;
-       color: #ecf2f7;
-       font-family: Arial,Helvetica,sans-serif;
-       height: 20px;
-       margin: 0px 0px 2px 0px;
-       padding: 0px 0px 0px 0px;
-       text-align: center;
-       text-shadow: 1px 1px 1px #000000;
-       width: 100%%;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+background-color: #E00BEB;
+behavior: url(http://pace-tv.googlecode.com/files/border-radius.htc);
+border-radius: 5px;
+border: 2px solid #19E526;
+color: #ecf2f7;
+font-family: Arial,Helvetica,sans-serif;
+height: 20px;
+margin: 0px 0px 2px 0px;
+padding: 0px 0px 0px 0px;
+text-align: center;
+text-shadow: 1px 1px 1px #000000;
+width: 100%%;
 }
 .bt6:hover{color:#6CF;text-shadow:1px 1px 1px #000;background:url(http://gubhugreyotprojects-smallbg.googlecode.com/svn/bgButtons-3V31H33.gif);}
 .bt7 {
-    -moz-box-shadow:inset 0px 0px 0px 0px #f9eca0;
-    -webkit-box-shadow:inset 0px 0px 0px 0px #f9eca0;
-    box-shadow:inset 0px 0px 0px 0px #f9eca0;
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #13f013), color-stop(1, #f01ff0) );
-    background:-moz-linear-gradient( center top, #13f013 5%, #f01ff0 100% );
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#13f013', endColorstr='#f01ff0');
-    background-color:#13f013;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
-    border:3px solid #eddd32;
-    display:inline-block;
-    color:#ffffff;
-    font-family:arial;
-    font-size:12px;
-    font-weight:bold;
-    padding:0px 1px;
-    text-decoration:none;
-    text-shadow:1px 1px 0px #ded17c;
+-moz-box-shadow:inset 0px 0px 0px 0px #f9eca0;
+-webkit-box-shadow:inset 0px 0px 0px 0px #f9eca0;
+box-shadow:inset 0px 0px 0px 0px #f9eca0;
+background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #13f013), color-stop(1, #f01ff0) );
+background:-moz-linear-gradient( center top, #13f013 5%, #f01ff0 100% );
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#13f013', endColorstr='#f01ff0');
+background-color:#13f013;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px;
+border:3px solid #eddd32;
+display:inline-block;
+color:#ffffff;
+font-family:arial;
+font-size:12px;
+font-weight:bold;
+padding:0px 1px;
+text-decoration:none;
+text-shadow:1px 1px 0px #ded17c;
 }.bt7:hover {
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f01ff0), color-stop(1, #13f013) );
-    background:-moz-linear-gradient( center top, #f01ff0 5%, #13f013 100% );
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f01ff0', endColorstr='#13f013');
-    background-color:#f01ff0;
+background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f01ff0), color-stop(1, #13f013) );
+background:-moz-linear-gradient( center top, #f01ff0 5%, #13f013 100% );
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f01ff0', endColorstr='#13f013');
+background-color:#f01ff0;
 }.bt7:active {
-    position:relative;
-    top:1px;
+position:relative;
+top:1px;
 }
-
-
 a#GRbt,a.GRbt,a#GRbt:hover,a.GRbt:hover{text-decoration:none;}
 .btst1{background:#FF8C00;text-transform:capitalize;}
 .btst2{background:#996600;text-decoration:blink;}
 .btst3{background:#FF0000;font-family:Verdana;}
-
 .menuku{height:35px;background:url(http://1.bp.blogspot.com/-Dz55XjfHfIU/T2AtDWgb0aI/AAAAAAAAA9I/vZgjL1iEbgk/s1600/menutop.png) repeat-x top;font:normal 12px Arial;line-height:normal;width:100%;text-
-
-transform:none;color:#f1f1f1;text-decoration:none;margin:0;padding:0;border-bottom: 3px solid #a21b14}
+transform:none;color:#f1f1f1;text-decoration:none;margin:0;padding:0;border-bottom: 3px solid #a21b14;opacity:0.9;
+  filter:alpha(opacity=90); /* For IE8 */}
 .menuku ul{margin:0;padding:0}
 .menuku li{list-style:none;color:#FFF;float:left;display:inline;position:relative;margin:0;padding:0}
 .menuku li a{display:block;background:0;background:url(http://1.bp.blogspot.com/-
-
 cos2ZwDvBNk/UEXi22DMIpI/AAAAAAAAByE/aYUV5lq7YNI/s1600/menuku+batas.png) no-repeat center right;color:#FFF;text-
-
-decoration:none;font:bold 14px Arial;text-shadow: -1px -1px 0 #88140e;outline:none;margin:0;padding:12px 13px}
+decoration:none;font:bold 14px Arial;text-shadow: -1px -1px 0 #88140e;outline:none;margin:0;padding:12px 13px;opacity:0.9;
+  filter:alpha(opacity=90); /* For IE8 */}
 .menuku li a:hover{background:#2a2a2a;text-shadow: -1px -1px 0 #000}
 .menuku li ul{position:absolute;z-index:10;left:0;top:100%;height:30px;width:120px;display:none;margin:0;padding:0}
 .menuku li ul a{background:#2a2a2a;border-left:none;font:12px Arial;border-right:none;border-top:1px solid 
-
-#484848;border-bottom:1px solid #000;display:block;padding:6px 10px;text-shadow: -1px -1px 0 #000}
+#484848;border-bottom:1px solid #000;display:block;padding:6px 10px;text-shadow: -1px -1px 0 #000;opacity:0.9;
+  filter:alpha(opacity=90); /* For IE8 */}
 .menuku li ul a:hover{background:#484848;}
 .menuku li ul li{float:none;display:block;width:auto}
 .menuku li ul ul{top:0;left:100%}
 .menuku li a:hover,.menuku ul li a:hover{color:#ccc}
+
+    ]]>
