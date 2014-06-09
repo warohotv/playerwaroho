@@ -1,6 +1,5 @@
+document.getElementById("h3").innerHTML = '
 <ul>
-
-
 <li><a class='bt3' onclick='warohotv(&quot;123&quot;)' style='cursor: pointer;'>TV ONLINE</a>
 <ul>
 <li><a onclick=':warohotv(&quot;mncgroup&quot;)' style='cursor: pointer;'>MNC GROUP</a></li>
@@ -147,3 +146,4 @@
 </ul></li>
 
 </ul>
+';
