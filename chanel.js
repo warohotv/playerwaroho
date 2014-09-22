@@ -1,29 +1,6 @@
-.menuku{height:35px;background:url(http://1.bp.blogspot.com/-Dz55XjfHfIU/T2AtDWgb0aI/AAAAAAAAA9I/vZgjL1iEbgk/s1600/menutop.png) repeat-x top;font:normal 12px Arial;line-height:normal;width:100%;text-
-transform:none;color:#f1f1f1;text-decoration:none;margin:0;padding:0;border-bottom: 3px solid #a21b14}
-.menuku ul{margin:0;padding:0}
-.menuku li{list-style:none;color:#FFF;float:left;display:inline;position:relative;margin:0;padding:0}
-.menuku li a{display:block;background:0;background:url(#) no-repeat center right;color:#FFF;text-
-decoration:none;font:bold 14px Arial;text-shadow: -1px -1px 0 #88140e;outline:none;margin:0;padding:5px 13px}
-.menuku li a:hover{background:#2a2a2a;text-shadow: -1px -1px 0 #000}
-.menuku li ul{position:absolute;z-index:10;left:0;top:100%;height:30px;width:120px;display:none;margin:0;padding:0}
-.menuku li ul a{background:#2a2a2a;border-left:none;font:12px Arial;border-right:none;border-top:1px solid 
 
-#484848;border-bottom:1px solid #000;display:block;padding:6px 10px;text-shadow: -1px -1px 0 #000}
-.menuku li ul a:hover{background:#484848;}
-.menuku li ul li{float:none;display:block;width:auto}
-.menuku li ul ul{top:0;left:100%}
-.menuku li a:hover,.menuku ul li a:hover{color:#ccc};
+document.getElementById("menuku").innerHTML = '<div id="top" style="position:fixed; bottom:0px; left:0px; width: 100%; top: 0px; border: 0px ">
 
-$(function() {
-    $('.menuku li').hover(function() {
-        $(this).children('ul').filter(':not(:animated)').show(200);
-    }, function() {
-        $(this).children('ul').hide(400);
-    });
-});
-
-document.getElementById("menu").innerHTML = '<div id="top" style="position:fixed; bottom:0px; left:0px; width: 100%; top: 0px; border: 0px ">
-<div class='menuku'>
 <ul>
 <li><a class='/' onclick='warohotv("123")' style='cursor: pointer;'>TV ONLINE</a>
 <ul>
@@ -150,6 +127,5 @@ document.getElementById("menu").innerHTML = '<div id="top" style="position:fixed
 <li><a onclick='warohotv3("mp3")' style='cursor: pointer;'>MP3 MUSIC</a></li>
 </ul></li>
 
-</ul>
-</div>';
+</ul>';
      
