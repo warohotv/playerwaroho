@@ -1,150 +1,155 @@
-      document.getElementById("menu").innerHTML = '<ul>
+.menuku{height:35px;background:url(http://1.bp.blogspot.com/-Dz55XjfHfIU/T2AtDWgb0aI/AAAAAAAAA9I/vZgjL1iEbgk/s1600/menutop.png) repeat-x top;font:normal 12px Arial;line-height:normal;width:100%;text-
+transform:none;color:#f1f1f1;text-decoration:none;margin:0;padding:0;border-bottom: 3px solid #a21b14}
+.menuku ul{margin:0;padding:0}
+.menuku li{list-style:none;color:#FFF;float:left;display:inline;position:relative;margin:0;padding:0}
+.menuku li a{display:block;background:0;background:url(#) no-repeat center right;color:#FFF;text-
+decoration:none;font:bold 14px Arial;text-shadow: -1px -1px 0 #88140e;outline:none;margin:0;padding:5px 13px}
+.menuku li a:hover{background:#2a2a2a;text-shadow: -1px -1px 0 #000}
+.menuku li ul{position:absolute;z-index:10;left:0;top:100%;height:30px;width:120px;display:none;margin:0;padding:0}
+.menuku li ul a{background:#2a2a2a;border-left:none;font:12px Arial;border-right:none;border-top:1px solid 
 
+#484848;border-bottom:1px solid #000;display:block;padding:6px 10px;text-shadow: -1px -1px 0 #000}
+.menuku li ul a:hover{background:#484848;}
+.menuku li ul li{float:none;display:block;width:auto}
+.menuku li ul ul{top:0;left:100%}
+.menuku li a:hover,.menuku ul li a:hover{color:#ccc};
 
-<li><a class='bt3' style='cursor: pointer;' onclick='warohotv(&quot;123&quot;)'>TV ONLINE</a>
+$(function() {
+    $('.menuku li').hover(function() {
+        $(this).children('ul').filter(':not(:animated)').show(200);
+    }, function() {
+        $(this).children('ul').hide(400);
+    });
+});
+
+document.getElementById("menu").innerHTML = '<div id="top" style="position:fixed; bottom:0px; left:0px; width: 100%; top: 0px; border: 0px ">
+<div class='menuku'>
 <ul>
-<li><a style='cursor: pointer;' onclick=':warohotv(&quot;mncgroup&quot;)'>MNC GROUP</a></li>
-<li class='hr'>
-</li><li><a style='cursor: pointer;' onclick='warohotv(&quot;firstmedia&quot;)'>FIRTS MEDIA</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;bagantv&quot;)'>BAGANTV</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;mivotv&quot;)'>MIVOTV</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;useetv&quot;)'>USEETV</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv3(&quot;tvri&quot;)'>TVRI</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;premium&quot;)'>TELKOMVISION</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv4(&quot;mnc&quot;)'>tes</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv3(&quot;tvri&quot;)'>TVRI</a></li>
+<li><a class='/' onclick='warohotv("123")' style='cursor: pointer;'>TV ONLINE</a>
+<ul>
+<li><a onclick='warohotv("mncgroup")' style='cursor: pointer;'>MNC GROUP</a></li>
+<li><a onclick='warohotv("bagantv")' style='cursor: pointer;'>BAGANTV</a></li>
+<li><a onclick='warohotv("mivotv")' style='cursor: pointer;'>MIVOTV</a></li>
+<li><a onclick='warohotv("useetv")' style='cursor: pointer;'>USEETV</a></li>
+<li><a onclick='warohotv("firstmedia")' style='cursor: pointer;'>FIRST MEDIA</a></li>
+<li><a onclick='warohotv3("tvri")' style='cursor: pointer;'>TVRI</a></li>
+<li><a onclick='warohotv("premium")' style='cursor: pointer;'>TELKOMVISION</a></li>
 </ul></li>
-
-<li><a class='bt3' style='cursor: pointer;' onclick='warohotv(&quot;tvindonesia&quot;)'>NASIONAL</a>
+<li><a class='/' onclick='warohotv("tvindonesia")' style='cursor: pointer;'>NASIONAL</a>
 <ul>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;123&quot;)'>INDONESIA</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;tvindonesia&quot;)'>TV NASIONAL</a></li>
-<li><a style='cursor: pointer;' onclick=':warohotv(&quot;tvindonesia2&quot;)'>TV DAERAH</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;tvindonesia3&quot;)'>TV INDONESIA2</a></li>
+<li><a onclick='warohotv4("jwplayerplayer")' style='cursor: pointer;'>INDONESIA</a></li>
+<li><a onclick='warohotv("tvindonesia")' style='cursor: pointer;'>TV NASIONAL</a></li>
+<li><a onclick='warohotv("tvindonesia2")' style='cursor: pointer;'>TV DAERAH</a></li>
+<li><a onclick='warohotv("tvindonesia3")' style='cursor: pointer;'>TV INDONESIA2</a></li>
 </ul></li>
-
-
-<li><a class='bt3' style='cursor: pointer;' onclick='warohotv(&quot;filmlaga&quot;)'>MOVIES</a>
+<li><a class='/' onclick='warohotv("filmlaga")' style='cursor: pointer;'>MOVIES</a>
 <ul>
-
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;action&quot;)'>ACTION</a>
+<li><a onclick='warohotv("action")' style='cursor: pointer;'>ACTION</a>
 <ul>
-
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;action&quot;)'>ACTION</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;action2&quot;)'>ACTION2</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;filmlaga&quot;)'>FILM LAGA</a></li>
-
-<li><a style='cursor: pointer;' onclick='warohotv2(&quot;subtetlemovie&quot;)'>SUBT INDONESIA</a></li>
+<li><a onclick='warohotv("action")' style='cursor: pointer;'>ACTION</a></li>
+<li><a onclick='warohotv("action2")' style='cursor: pointer;'>ACTION2</a></li>
+<li><a onclick='warohotv("filmlaga")' style='cursor: pointer;'>FILM LAGA</a></li>
+<li><a onclick='warohotv2("subtetlemovie")' style='cursor: pointer;'>SUBT INDONESIA</a></li>
 </ul>
 </li>
-<li><a style='cursor: pointer;' onclick='warohotv3(&quot;by-wacmolcom&quot;)'>FILM BY wacmol.com</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;moviesjapan&quot;)'>JEPANG</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv3(&quot;juragantomat&quot;)'>INDONESIA</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;filmindonesia&quot;)'>INDONESIA2</a>
+
+<li><a onclick='warohotv("filmindonesia")' style='cursor: pointer;'>INDONESIA2</a>
 <ul>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;filmjadul&quot;)'>FILM JADUL</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;filmindonesia&quot;)'>FILM INDONESIA</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;mytrans&quot;)'>CINE INDONESIA</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;chanel&quot;)'>INDONESIA2</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;ftv&quot;)'>FTV INDONESIA</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;ftv2&quot;)'>FTV INDONESIA 2</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;ftv3&quot;)'>FTV INDONESIA 3</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;horor&quot;)'>FILM HOROR</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;ftvsctv&quot;)'>FTV SCTV</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;ftvromantis&quot;)'>FILM ROMANTIS</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;filmbioskop&quot;)'>FILM BIOSKOP</a></li>
+<li><a onclick='warohotv("filmjadul")' style='cursor: pointer;'>FILM JADUL</a></li>
+<li><a onclick='warohotv("filmindonesia")' style='cursor: pointer;'>FILM INDONESIA</a></li>
+<li><a onclick='warohotv("mytrans")' style='cursor: pointer;'>CINE INDONESIA</a></li>
+<li><a onclick='warohotv("chanel")' style='cursor: pointer;'>INDONESIA2</a></li>
+<li><a onclick='warohotv("ftv")' style='cursor: pointer;'>FTV INDONESIA</a></li>
+<li><a onclick='warohotv("ftv2")' style='cursor: pointer;'>FTV INDONESIA 2</a></li>
+<li><a onclick='warohotv("ftv3")' style='cursor: pointer;'>FTV INDONESIA 3</a></li>
+<li><a onclick='warohotv("horor")' style='cursor: pointer;'>FILM HOROR</a></li>
+<li><a onclick='warohotv("ftvsctv")' style='cursor: pointer;'>FTV SCTV</a></li>
+<li><a onclick='warohotv("ftvromantis")' style='cursor: pointer;'>FILM ROMANTIS</a></li>
+<li><a onclick='warohotv("filmbioskop")' style='cursor: pointer;'>FILM BIOSKOP</a></li>
 </ul></li>
+<li><a onclick='warohotv("moviesjapan")' style='cursor: pointer;'>JEPANG</a></li>
+<li><a onclick='warohotv3("juragantomat")' style='cursor: pointer;'>INDONESIA</a></li>
 </ul></li>
-
-
-
-
-  <li><a class='bt3' href='/'>COUNTRY</a>
+<li><a onclick='warohotv3("pialadunia2")' style='cursor: pointer;'>CHANEL SPORT</a>
 <ul>
-<li><a style='cursor: pointer;' onclick='warohotv4(&quot;1234&quot;)'>ARAB</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv4(&quot;arab&quot;)'>ARAB2</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;brazil&quot;)'>BRAZIL</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;china&quot;)'>CHINA</a>
+<li><a onclick='warohotv3("pialadunia2")' style='cursor: pointer;'>SPORT</a></li>
+<li><a onclick='warohotv5("bein1")' style='cursor: pointer;'>BEIN SPORT 1</a></li>
+<li><a onclick='warohotv5("bvsport")' style='cursor: pointer;'>BV SPORT</a></li>
+</ul></li>
+<li><a class='/' href='/'>COUNTRY</a>
 <ul>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;cctv1&quot;)'>CCTV1</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;cctv2&quot;)'>CCTV2</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;cctv3&quot;)'>CCTV3</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;cctv4&quot;)'>CCTV4</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;cctv4b&quot;)'>CCTV4b</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;cctv5&quot;)'>CCTV5</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;cctv7&quot;)'>CCTV7</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;cctv7b&quot;)'>CCTV7b</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;cctv8&quot;)'>CCTV8</a></li>
+<li><a onclick='warohotv4("1234")' style='cursor: pointer;'>ARAB</a></li>
+<li><a onclick='warohotv4("arab")' style='cursor: pointer;'>ARAB2</a></li>
+<li><a onclick='warohotv("brazil")' style='cursor: pointer;'>BRAZIL</a></li>
+<li><a onclick='warohotv("china")' style='cursor: pointer;'>CHINA</a>
+<ul>
+<li><a onclick='warohotv("cctv1")' style='cursor: pointer;'>CCTV1</a></li>
+<li><a onclick='warohotv("cctv2")' style='cursor: pointer;'>CCTV2</a></li>
+<li><a onclick='warohotv("cctv3")' style='cursor: pointer;'>CCTV3</a></li>
+<li><a onclick='warohotv("cctv4")' style='cursor: pointer;'>CCTV4</a></li>
+<li><a onclick='warohotv("cctv4b")' style='cursor: pointer;'>CCTV4b</a></li>
+<li><a onclick='warohotv("cctv5")' style='cursor: pointer;'>CCTV5</a></li>
+<li><a onclick='warohotv("cctv7")' style='cursor: pointer;'>CCTV7</a></li>
+<li><a onclick='warohotv("cctv7b")' style='cursor: pointer;'>CCTV7b</a></li>
+<li><a onclick='warohotv("cctv8")' style='cursor: pointer;'>CCTV8</a></li>
 </ul>
 </li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;italy&quot;)'>EUROPA</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;france&quot;)'>FRANCE</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;tvhindia&quot;)'>HINDIA</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;korea&quot;)'>KOREAN</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;kuwait&quot;)'>KUWAIT</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;russian&quot;)'>RUSSIAN</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;thailand&quot;)'>THAILAND</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv3(&quot;turkish&quot;)'>TURKISH</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv4(&quot;europa&quot;)'>USA</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;vietname&quot;)'>VIETNAME</a></li>
+<li><a onclick='warohotv("italy")' style='cursor: pointer;'>EUROPA</a></li>
+<li><a onclick='warohotv("france")' style='cursor: pointer;'>FRANCE</a></li>
+<li><a onclick='warohotv("tvhindia")' style='cursor: pointer;'>HINDIA</a></li>
+<li><a onclick='warohotv("korea")' style='cursor: pointer;'>KOREAN</a></li>
+<li><a onclick='warohotv("kuwait")' style='cursor: pointer;'>KUWAIT</a></li>
+<li><a onclick='warohotv("russian")' style='cursor: pointer;'>RUSSIAN</a></li>
+<li><a onclick='warohotv("thailand")' style='cursor: pointer;'>THAILAND</a></li>
+<li><a onclick='warohotv3("turkish")' style='cursor: pointer;'>TURKISH</a></li>
+<li><a onclick='warohotv4("europa")' style='cursor: pointer;'>USA</a></li>
+<li><a onclick='warohotv("vietname")' style='cursor: pointer;'>VIETNAME</a></li>
+</ul></li>
+<li><a onclick='warohotv("dangdut")' style='cursor: pointer;'>MUSIC</a>
+<ul>
+<li><a onclick='warohotv3("tvmusic")' style='cursor: pointer;'>TV MUSIC</a></li>
+<li><a onclick='warohotv("dangdut")' style='cursor: pointer;'>DANGDUT</a>
+<ul>
+<li><a onclick='warohotv("dangdut")' style='cursor: pointer;'>DANGDUT</a></li>
+<li><a onclick='warohotv("dangdut2")' style='cursor: pointer;'>DANGDUT2</a></li>
+<li><a onclick='warohotv("koplo")' style='cursor: pointer;'>KOPLO</a></li>
+<li><a onclick='warohotv("roma")' style='cursor: pointer;'>ROMA IRAMA</a></li>
+<li><a onclick='warohotv("yks")' style='cursor: pointer;'>OPLOSAN YKS</a></li>
+<li><a onclick='warohotv("omsera")' style='cursor: pointer;'>OMSERA</a></li>
+</ul></li>
+<li><a onclick='warohotv("dianpisesha")' style='cursor: pointer;'>NOSTALGIA</a>
+<ul>
+<li><a onclick='warohotv("ebietgade")' style='cursor: pointer;'>EBIET G ADE</a></li>
+<li><a onclick='warohotv("nikeardila")' style='cursor: pointer;'>NIKE ARDILA</a></li>
+<li><a onclick='warohotv("dianpisesha")' style='cursor: pointer;'>DIAN PISESHA</a></li>
+<li><a onclick='warohotv("pance")' style='cursor: pointer;'>PANCE</a></li>
+</ul></li>
+<li><a onclick='warohotv("pop")' style='cursor: pointer;'>POP</a>
+<ul>
+<li><a onclick='warohotv("pop")' style='cursor: pointer;'>POP</a></li>
+<li><a onclick='warohotv("pop2")' style='cursor: pointer;'>POP2</a></li>
+<li><a onclick='warohotv("thevirgin")' style='cursor: pointer;'>THE VIRGIN</a></li>
+<li><a onclick='warohotv("wali")' style='cursor: pointer;'>WALI</a></li>
+<li><a onclick='warohotv4("wali")' style='cursor: pointer;'>WALI</a></li>
+<li><a onclick='warohotv("zivilia")' style='cursor: pointer;'>ZIVILIA</a></li>
+</ul></li>
+<li><a href='javascript:warohotv("minang")'>MINANG</a>
+<ul>
+<li><a onclick='warohotv("minang")' style='cursor: pointer;'>MINANG</a></li>
+<li><a onclick='warohotv("minang2")' style='cursor: pointer;'>MINANG2</a></li>
+<li><a onclick='warohotv("minang3")' style='cursor: pointer;'>MINANG3</a></li>
+<li><a onclick='warohotv("minang4")' style='cursor: pointer;'>MINANG4</a></li>
+<li><a onclick='warohotv4("minang")' style='cursor: pointer;'>MINANG5</a></li>
+<li><a onclick='warohotv("ria-amelia")' style='cursor: pointer;'>RIA AMELIA</a></li>
+<li><a onclick='warohotv("ria-amelia2")' style='cursor: pointer;'>RIA AMELIA 2</a></li>
+<li><a onclick='warohotv("saluang")' style='cursor: pointer;'>SALUANG</a></li>
+</ul></li>
+<li><a onclick='warohotv("fatin")' style='cursor: pointer;'>FATIN</a></li>
+<li><a onclick='warohotv("house")' style='cursor: pointer;'>HOUSE</a></li>
+<li><a onclick='warohotv("komik")' style='cursor: pointer;'>KOMIK</a></li>
+<li><a onclick='warohotv3("mp3")' style='cursor: pointer;'>MP3 MUSIC</a></li>
 </ul></li>
 
-
-  <li><a class='bt3' href='/'>MUSIC</a>
-<ul>
-<li><a style='cursor: pointer;' onclick='warohotv3(&quot;tvmusic&quot;)'>TV MUSIC</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;dangdut&quot;)'>DANGDUT</a>
-<ul>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;dangdut&quot;)'>DANGDUT</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;dangdut2&quot;)'>DANGDUT2</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;koplo&quot;)'>KOPLO</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;roma&quot;)'>ROMA IRAMA</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;yks&quot;)'>OPLOSAN YKS</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;omsera&quot;)'>OMSERA</a></li>
-</ul></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;dianpisesha&quot;)'>NOSTALGIA</a>
-<ul>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;ebietgade&quot;)'>EBIET G ADE</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;nikeardila&quot;)'>NIKE ARDILA</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;dianpisesha&quot;)'>DIAN PISESHA</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;pance&quot;)'>PANCE</a></li>
-</ul></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;pop&quot;)'>POP</a>
-<ul>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;pop&quot;)'>POP</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;pop2&quot;)'>POP2</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;thevirgin&quot;)'>THE VIRGIN</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;wali&quot;)'>WALI</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;zivilia&quot;)'>ZIVILIA</a></li>
-</ul></li>
-<li><a href='javascript:warohotv(&quot;minang&quot;)'>MINANG</a>
-<ul>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;minang&quot;)'>MINANG</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;minang2&quot;)'>MINANG2</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;minang3&quot;)'>MINANG3</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;minang4&quot;)'>MINANG4</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv4(&quot;minang&quot;)'>MINANG5</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;ria-amelia&quot;)'>RIA AMELIA</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;ria-amelia2&quot;)'>RIA AMELIA 2</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;saluang&quot;)'>SALUANG</a></li>
- </ul></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;fatin&quot;)'>FATIN</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;house&quot;)'>HOUSE</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;komik&quot;)'>KOMIK</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv3(&quot;mp3&quot;)'>MP3 MUSIC</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;radio&quot;)'>RADIO</a></li>
-</ul></li>
-  <li><a class='bt3' href='/'>LIVE SPORT NOW</a>
-<ul>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;starsport&quot;)'>SPORT LIVE</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;sport&quot;)'><blink>SPORT</blink></a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;livesport4u&quot;)'>LIVESPORT4U</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;sporttv&quot;)'>SPORTTV</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;sporttv&quot;)'>SPORTTV</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;supersport&quot;)'>SUPER SPORT</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv(&quot;ch1&quot;)'>SPORT CH NEW</a></li>
-<li><a style='cursor: pointer;' onclick='warohotv4(&quot;chsport10&quot;)'>SPORT CH2 NEW</a></li>
-</ul></li>
-
-</ul>';
+</ul>
+</div>';
      
