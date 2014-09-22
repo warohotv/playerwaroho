@@ -1,5 +1,4 @@
-
-document.getElementById("menuku").innerHTML = '<div id="top" style="position:fixed; bottom:0px; left:0px; width: 100%; top: 0px; border: 0px ">
+document.getElementById("menuku").innerHTML = '
 
 <ul>
 <li><a class='/' onclick='warohotv("123")' style='cursor: pointer;'>TV ONLINE</a>
