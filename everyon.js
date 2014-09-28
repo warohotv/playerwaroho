@@ -1,4 +1,4 @@
-jwplayer('player').setup({
+jwplayer('myElement').setup({
 'playlist': [
 
 {'sources': [{'file': 'rtmp://lm07.everyon.tv:1935/ptv7/phd59'}],
