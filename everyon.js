@@ -70,11 +70,9 @@ jwplayer("myElement").setup({
  'title': 'powergirls'},
 
 ],
-listbar: {layout: 'basic',position: 'right',size: 200 },
-logo:  {file:  "http://1.bp.blogspot.com/-48Zet0D874I/UvzFP0eaQ3I/AAAAAAAAABs/l8ZM898W6TI/s1600/warohotv.png",position:  'top-right',margin: '0',link: "http://warohotv.blogspot.com/"},
-stretching: "exactfit",
-flashplayer   : "http://playerwaroho.googlecode.com/svn/jwplayer.swf",
+width: "100%",
+height: "450",
 skin: "roundster",
-width: '100%',
-height: '100%'
-});}
+flashplayer   : "http://playerwaroho.googlecode.com/svn/jwplayer.swf",
+listbar: {'size': '250','position': 'right'}
+  });}
