@@ -73,6 +73,7 @@ jwplayer("myElement").setup({
 width: "100%",
 height: "450",
 skin: "roundster",
+stretching: "exactfit",
 flashplayer   : "http://playerwaroho.googlecode.com/svn/jwplayer.swf",
 listbar: {'size': '250','position': 'right'}
   });}
