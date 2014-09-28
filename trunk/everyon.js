@@ -71,9 +71,9 @@ jwplayer("myElement").setup({
 
 ],
 width: "100%",
-height: "450",
+height: "480",
 skin: "roundster",
 stretching: "exactfit",
 flashplayer   : "http://playerwaroho.googlecode.com/svn/jwplayer.swf",
-listbar: {layout: 'basic','size': '150','position': 'right'}
+listbar: {layout: 'basic','size': '170','position': 'right'}
   });}
