@@ -71,7 +71,7 @@ jwplayer("myElement").setup({
 
 ],
 width: "100%",
-height: "100%",
+height: "480",
 skin: "roundster",
 stretching: "exactfit",
 flashplayer   : "http://playerwaroho.googlecode.com/svn/jwplayer.swf",
