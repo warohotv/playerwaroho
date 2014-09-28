@@ -1,3 +1,4 @@
+  function everyon() {
 jwplayer('myElement').setup({
 'playlist': [
 
@@ -75,4 +76,4 @@ stretching: "exactfit",
 skin: "roundster",
 width: '100%',
 height: '100%'
-});
+});}
