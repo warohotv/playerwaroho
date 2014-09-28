@@ -73,6 +73,7 @@ jwplayer('myElement').setup({
 listbar: {layout: 'basic',position: 'right',size: 200 },
 logo:  {file:  "http://1.bp.blogspot.com/-48Zet0D874I/UvzFP0eaQ3I/AAAAAAAAABs/l8ZM898W6TI/s1600/warohotv.png",position:  'top-right',margin: '0',link: "http://warohotv.blogspot.com/"},
 stretching: "exactfit",
+flashplayer   : "http://playerwaroho.googlecode.com/svn/jwplayer.swf",
 skin: "roundster",
 width: '100%',
 height: '100%'
