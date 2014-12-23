@@ -1,0 +1,16 @@
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:jwplayer="http://developer.longtailvideo.com/" version="2.0">
+  <channel>
+    <title>Flash Multi Bit Rate Playlist</title>
+    <item>
+      <title>Live Streaming</title>
+      <description>Put your description here.</description>
+      <media:group>
+        <media:content bitrate="656000" url="antv-stream_656" width="663"/>
+        <media:content bitrate="456000" url="antv-stream_456" width="663"/>
+        <media:content bitrate="256000" url="antv-stream_256" width="663"/>
+      </media:group>
+      <jwplayer:streamer>rtmp://fml.11A75.edgecastcdn.net/2011A75/default</jwplayer:streamer>
+      <jwplayer:provider>rtmp</jwplayer:provider>
+    </item>
+  </channel>
+</rss>
