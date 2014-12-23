@@ -1,0 +1,19 @@
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:jwplayer="http://developer.longtailvideo.com/" version="2.0">
+  <channel>
+    <title>Flash Multi Bit Rate Playlist</title>
+    <item>
+      <title>Live Streaming</title>
+      <description>Put your description here.</description>
+      <media:group>
+        <media:content bitrate="656000" url="trans7@1.sdp" width="663"/>
+        <media:content bitrate="456000" url="trans7@2.sdp" width="663"/>
+        <media:content bitrate="256000" url="trans7@3.sdp" width="663"/>
+		<media:content bitrate="656000" url="trans7@4.sdp" width="663"/>
+        <media:content bitrate="456000" url="trans7@5.sdp" width="663"/>
+        <media:content bitrate="256000" url="trans7@6.sdp" width="663"/>
+      </media:group>
+      <jwplayer:streamer>rtmp://live.mytrans.com:1935/live</jwplayer:streamer>
+      <jwplayer:provider>rtmp</jwplayer:provider>
+    </item>
+  </channel>
+</rss>
