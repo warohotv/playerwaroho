@@ -1,16 +1,10 @@
-
-
 function clickwaroho() {
-jwplayer("warohotv-oke").setup({
-  playlist: "http://gdata.youtube.com/feeds/api/playlists/PL20047F0DA1618B18?max-results=50&alt=rss",
-listbar: {
-layout: 'basic',
- position: 'right',
- size: 230 },
-stretching: "exactfit",
-        title: '',
-        width: '100%',
-        height: '100%',
-skin: "roundster",
-sharing:' {)',
-    });}
+  var num=0;
+        jwplayer("warohotv-oke").setup({
+'modes': [ {type: 'html5'}, {type: 'flash', src: 'https://playwaroho.googlecode.com/svn/tags/jwplayer.swf'}, {type: 'download'}],
+   playlist:playlist,
+   width: '100%',height: '100%',
+   autostart:true,
+   events:{onError:function(){ if( num <playlist.length) {num++; this.playlistNext()}}},
+   
+  });}
