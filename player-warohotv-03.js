@@ -30,3 +30,14 @@ function clickwaroho2() {
    events:{onError:function(){ if( num <playlist.length) {num++; this.playlistNext()}}},
    
   });}
+  
+  function clickwaroho3() {
+  var num=0;
+        jwplayer("warohotv-oke").setup({
+'flashplayer' : 'https://playwaroho.googlecode.com/svn/tags/jwplayer.swf',
+   playlist:playlist,
+   width: '100%',height: '100%',listbar: {layout: 'basic',position: 'right',size: 240 },
+   autostart:true,logo: {file: "http://3.bp.blogspot.com/-wjtLdp0gl3w/VI9Hu9PKiwI/AAAAAAAAB6k/8Rxat1u3KTQ/s320/logo.png",position: 'top-right',margin: '0',link: "http://warohotv.blogspot.com/"},
+   events:{onError:function(){ if( num <playlist.length) {num++; this.playlistNext()}}},
+   
+  });}
