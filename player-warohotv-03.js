@@ -41,3 +41,12 @@ function clickwaroho2() {
    events:{onError:function(){ if( num <playlist.length) {num++; this.playlistNext()}}},
    
   });}
+  
+    function Video(myFile,myImage,mytitle) { 
+    jwplayer().load([{
+      file: myFile,
+      image: myImage,
+      title: mytitle
+    }]);
+    jwplayer().play();
+  };
